@@ -1,0 +1,8 @@
+[package]
+name = "blme"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+git2 = "0.20.2"
+nvim-oxi = { version = "0.5.1", features = ["neovim-0-10"] }
