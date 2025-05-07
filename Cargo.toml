@@ -4,5 +4,11 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+anyhow = "1.0.98"
 git2 = "0.20.2"
-nvim-oxi = { version = "0.5.1", features = ["neovim-0-10"] }
+nvim-oxi = { version = "0.5.1", features = ["neovim-0-10", "test"] }
+pathdiff = "0.2.3"
+relative-path = "1.9.3"
+
+[lib]
+crate-type = ["cdylib"]
