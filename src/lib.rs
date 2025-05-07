@@ -18,8 +18,8 @@ mod tests {
         assert!(cwd.exists());
         let blame = repo.blame_file(cwd.as_path(), None).expect("hi");
 
-        for line in 0..blame.len() {
-            println!("{:#?}", blame.get_line(line).expect("hi").lines_in_hunk());
+        for line in 1..blame.len() {
+            println!("{}", blame.get_line(line).expect("hi").lines_in_hunk());
         }
     }
 }
